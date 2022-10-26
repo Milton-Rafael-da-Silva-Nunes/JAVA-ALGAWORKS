@@ -11,6 +11,11 @@ public class main {
         int soma = 0;
         
         do {
+            /*
+            *@ do SEMPRE ESSE CODIGO SERÁ EXECUTADO ANTES DO WHILE
+            * ex: ENQUANTO ELE NAO DIGITAR 0(ZERO) SERA PERGUNTADO UM NUMERO AO USUARIO
+            */
+            
             System.out.println("Digite 0 (zero) para sair ou qualquer numero para somar: ");
             valor = entrada.nextInt();
                 
