@@ -2,25 +2,22 @@ package java_algaworks;
 
 import java.util.Scanner;
 
-
 public class main {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         
-        System.out.print("Digite o numero inicial: ");
-        int numeroInicial = entrada.nextInt();
+        int valor = 0;
+        int soma = 0;
         
-        System.out.print("Digite o numero final: ");
-        int numeroFinal = entrada.nextInt();
-        
-        int numeroAtual = numeroInicial;
-        
-        while(numeroAtual <= numeroFinal) { /* WHILE retorna BOOLEAN */
-            System.out.println(numeroAtual);
-            numeroAtual ++;
-        }
+        do {
+            System.out.println("Digite 0 (zero) para sair ou qualquer numero para somar: ");
+            valor = entrada.nextInt();
+                
+            soma += valor;
             
+        } while (valor != 0);
+            System.out.println("Soma: " + soma);
     }
         
 }
