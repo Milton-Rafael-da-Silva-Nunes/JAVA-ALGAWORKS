@@ -7,37 +7,38 @@ public class main {
 
     public static void main(String[] args) {
         
-        ClassDono dono1 = new ClassDono();
-        ClassDono dono2 = new ClassDono();
+        ClassDono eu = new ClassDono(); // DONO 1
+        ClassDono vc = new ClassDono(); // DONO 2
         
-        dono1.nome = "Rafael Nunes";
-        dono1.idade = 26;
+        eu.nome = "Rafael Nunes";
+        eu.idade = 26;
         
-        dono2.nome = "Milton Neves";
-        dono2.idade = 19;
+        vc.nome = "Milton Neves";
+        vc.idade = 19;
         
-        ClassCarro carro1 = new ClassCarro(); // CARRO 1
-        ClassCarro carro2 = new ClassCarro(); // CARRO 2
+        ClassCarro meuCarro = new ClassCarro(); // CARRO 1
+        ClassCarro seuCarro = new ClassCarro(); // CARRO 2
         
-        carro1.fabricante = "Fiat";
-        carro1.modelo = "Toro";
-        carro1.cor = "Branco Gelo";
-        carro1.anoFabricacao = 2021;
+        meuCarro.fabricante = "Fiat";
+        meuCarro.modelo = "Toro";
+        meuCarro.cor = "Branco Gelo";
+        meuCarro.anoFabricacao = 2021;
+        meuCarro.ligarCarro();
         
-        carro2.fabricante = "VolksWagen";
-        carro2.modelo = "Gol G3";
-        carro2.cor = "Vermelho Ferrari";
-        carro2.anoFabricacao = 2012;
+        seuCarro.fabricante = "VolksWagen";
+        seuCarro.modelo = "Gol G3";
+        seuCarro.cor = "Vermelho Ferrari";
+        seuCarro.anoFabricacao = 2012;
         
-        carro1.dono = dono1;
-        carro2.dono = dono2;
+        meuCarro.dono = eu;
+        seuCarro.dono = vc;
         
+        System.out.println("Eu: " + eu.nome);
+        System.out.println("Dono do carro 1: " + meuCarro.dono.nome);
+        System.out.println("**************************************");
+        System.out.println("Vc: " + vc.nome);
+        System.out.println("Dono do carro 2: " + seuCarro.dono.nome);
         
-        System.out.println("Carro 1: " + carro1.dono.nome);
-        System.out.println("Dono 1: " + dono1.nome);
-        
-        System.out.println("Carro 2: " + carro2.dono.nome);
-        System.out.println("Dono 2: " + dono2.nome);
            
     }
         
