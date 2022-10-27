@@ -1,0 +1,12 @@
+package Classes;
+
+public class ClassCarro {
+    
+    public String fabricante;
+    public String modelo;
+    public String cor;
+    public int anoFabricacao;
+    
+    public ClassDono dono;
+    
+}
