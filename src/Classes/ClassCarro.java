@@ -10,7 +10,9 @@ public class ClassCarro {
     public ClassDono dono;
     
     public void ligarCarro() {
-        System.out.println("Ligando carro: " + modelo);
+        if(modelo != null) {
+            System.out.println("Ligando carro: " + modelo);
+        }
     }
     
 }
